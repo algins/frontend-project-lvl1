@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A set of five console games, built on the principle of popular mobile brain training apps",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -5,3 +5,9 @@
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/algins/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/algins/frontend-project-lvl1/actions)
+
+### Setup:
+* [Install](https://asciinema.org/a/NoGBuggMXjBcmKJJL9xPFR9qa)
+
+### Demo:
+* [Even](https://asciinema.org/a/a3tD3jTD13Yfr4SLiSNvz4GIt)
