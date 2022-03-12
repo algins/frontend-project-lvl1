@@ -1,6 +1,5 @@
+import random from 'lodash.random';
 import playGame from '../index.js';
-
-const getNumber = () => Math.round(Math.random() * 10);
 
 const getOperation = () => {
   const operations = ['+', '-', '*'];
@@ -24,8 +23,8 @@ export default () => {
   const description = 'What is the result of the expression?';
 
   playGame(() => {
-    const num1 = getNumber();
-    const num2 = getNumber();
+    const num1 = random(0, 10);
+    const num2 = random(0, 10);
     const operation = getOperation();
 
     return {
