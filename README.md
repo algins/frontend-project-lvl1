@@ -12,3 +12,4 @@
 ### Demo:
 * [Even](https://asciinema.org/a/a3tD3jTD13Yfr4SLiSNvz4GIt)
 * [Calc](https://asciinema.org/a/CeFMlozRN4XjGx5X4o77tfuMz)
+* [Gcd](https://asciinema.org/a/TesWsgbwhv2ME1741q2QeYBLv)
