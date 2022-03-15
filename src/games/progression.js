@@ -1,11 +1,11 @@
 import random from 'lodash.random';
 import playGame from '../index.js';
 
-const generateProgression = (start, step, size) => {
+const generateProgression = (start, step, size, hiddenIndex) => {
   const progression = [];
 
   for (let i = 0; i < size; i += 1) {
-    progression[i] = start + step * i;
+    progression[i] = i === hiddenIndex ? '..' : start + step * i;
   }
 
   return progression;
@@ -18,12 +18,12 @@ export default () => {
     const start = random(0, 10);
     const step = random(0, 10);
     const size = random(5, 15);
-    const progression = generateProgression(start, step, size);
-    const hiddenItemIndex = random(0, progression.length);
-    const hiddenItem = progression[hiddenItemIndex];
+    const hiddenIndex = random(0, size - 1);
+    const progression = generateProgression(start, step, size, hiddenIndex);
+    const hiddenItem = start + step * hiddenIndex;
 
     return {
-      question: progression.map((item) => (item === hiddenItem ? '..' : item)).join(' '),
+      question: progression.join(' '),
       answer: String(hiddenItem),
     };
   }, description);
