@@ -7,9 +7,9 @@ export default (game, description) => {
   greet(name);
   console.log(description);
 
-  const rounds = 3;
+  const roundsCount = 3;
 
-  for (let i = 1; i <= rounds; i += 1) {
+  for (let i = 1; i <= roundsCount; i += 1) {
     const { question, answer: correctAnswer } = game();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
