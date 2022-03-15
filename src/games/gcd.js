@@ -4,6 +4,11 @@ import playGame from '../index.js';
 const calcGcd = (num1, num2) => {
   const min = Math.min(num1, num2);
   const max = Math.max(num1, num2);
+
+  if (min === 0) {
+    return max;
+  }
+
   const modulo = max % min;
 
   if (modulo === 0) {
