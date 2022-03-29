@@ -10,6 +10,7 @@ A set of five console games, built on the principle of popular mobile brain trai
 ## Setup:
 ```sh
 $ git clone https://github.com/algins/frontend-project-lvl1.git
+$ cd frontend-project-lvl1
 $ make install
 $ make publish
 $ npm link
