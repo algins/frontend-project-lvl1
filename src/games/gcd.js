@@ -2,20 +2,11 @@ import random from 'lodash.random';
 import playGame from '../index.js';
 
 const calcGcd = (num1, num2) => {
-  const min = Math.min(num1, num2);
-  const max = Math.max(num1, num2);
-
-  if (min === 0) {
-    return max;
+  if (num2 === 0) {
+    return num1;
   }
 
-  const modulo = max % min;
-
-  if (modulo === 0) {
-    return min;
-  }
-
-  return calcGcd(min, modulo);
+  return calcGcd(num2, num1 % num2);
 };
 
 export default () => {
